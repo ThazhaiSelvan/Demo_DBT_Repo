@@ -19,3 +19,21 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: MYTABLE
+      description: "A starter dbt model"
+      columns:
+          - name: AMOUNT
+            description: "The primary key for this table"
+            tests:
+
+    - name: Employee
+      description: "Testing"
+      columns:
+          - name: EMPID
+            description: "Testing"
+            tests:
+                 - unique
+                
+   
+   
