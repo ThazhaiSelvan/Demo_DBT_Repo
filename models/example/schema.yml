@@ -20,13 +20,6 @@ models:
                 - unique
                 - not_null
 
-    - name: MYTABLE
-      description: "A starter dbt model"
-      columns:
-          - name: AMOUNT
-            description: "The primary key for this table"
-            tests:
-
     - name: Employee
       description: "Testing"
       columns:
@@ -35,5 +28,27 @@ models:
             tests:
                  - unique
                 
+    - name: CustomerData
+      description: "Table to Table load"
+      columns:
+          - name: CustID
+            tests:
+                 - unique
+          - name: FirstName
+          - name: LastName
+          - name: Address
+          - name: City 
+          
+             
+    - name: Customer_Records
+      description: "Table to Table load"
+      columns:
+          - name: CustID
+            tests:
+                 - unique
+          - name: FirstName
+          - name: LastName
+          - name: Address
+          - name: City                
    
    
