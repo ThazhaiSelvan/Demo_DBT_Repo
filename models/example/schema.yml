@@ -21,12 +21,6 @@ models:
                 - not_null
 
     - name: Employee
-      description: "Testing"
-      columns:
-          - name: EMPID
-            description: "Testing"
-            tests:
-                 - unique
                 
     - name: CustomerData
       description: "Table to Table load"
@@ -37,18 +31,8 @@ models:
           - name: FirstName
           - name: LastName
           - name: Address
-          - name: City 
-          
+          - name: City      
              
-    - name: Customer_Records
-      description: "Table to Table load"
-      columns:
-          - name: CustID
-            tests:
-                 - unique
-          - name: FirstName
-          - name: LastName
-          - name: Address
-          - name: City                
-   
-   
+    - name: Customer_Records 
+
+    - name: TableCreationDemo
