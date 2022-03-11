@@ -1,9 +1,14 @@
 
 version: 2
 
+sources:
+  - name: Source_Ref
+    tables:
+      - name: PRODUCT
+      - name: CUSTOMERDATA
+
 models:
     - name: my_first_dbt_model
-      description: "A starter dbt model"
       columns:
           - name: id
             description: "The primary key for this table"
@@ -36,3 +41,5 @@ models:
     - name: Customer_Records 
 
     - name: TableCreationDemo
+
+
