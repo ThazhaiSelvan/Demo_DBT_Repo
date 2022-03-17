@@ -2,11 +2,9 @@
 version: 2
 
 sources:
-  - name: Source_Ref
-    tables:
-      - name: PRODUCT
-      - name: CUSTOMERDATA
-
+    - name: LEARN_DBT_SCHEMA
+      tables:
+          - name: PRODUCT
 models:
     - name: my_first_dbt_model
       columns:
@@ -14,8 +12,6 @@ models:
             description: "The primary key for this table"
             tests:
                 - unique
-                - not_null
-
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
@@ -36,10 +32,10 @@ models:
           - name: FirstName
           - name: LastName
           - name: Address
-          - name: City      
-             
+          - name: City              
     - name: Customer_Records 
-
     - name: TableCreationDemo
+
+
 
 

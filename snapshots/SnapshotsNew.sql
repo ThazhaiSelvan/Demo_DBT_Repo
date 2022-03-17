@@ -1,4 +1,4 @@
-{% snapshot CUST_DATA_SNAPSHOT %}
+{% snapshot orders_snapshot1 %}
 
 {{
     config(
@@ -10,7 +10,6 @@
     )
 }}
 
---select * from {{ source('Source_Ref', 'CUSTOMERDATA') }}
 SELECT * FROM CUSTOMERDATA
 
 {% endsnapshot %}

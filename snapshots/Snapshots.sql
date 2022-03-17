@@ -11,7 +11,6 @@
     )
 }}
 
---select * from {{ source('Source_Ref', 'CUSTOMERDATA') }}
 SELECT * FROM CUSTOMERDATA
 
 {% endsnapshot %}
